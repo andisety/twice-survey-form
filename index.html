@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>survey form</title>
+</head>
+<body>
+    <h1 id="title">Twice Survey Form</h1>
+    <p id="description">Please fill the form,thank you</p>
+
+    <form id="survey-form">
+
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+        </label>
+        <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+        </label>
+        <label for="number" id="number-label">
+            Age
+            <input type="number" id="number" placeholder="How Old You?" min="15" max="40" required>
+        </label>
+        <label for="dropdown" id="dropdown-label">
+            How do you know Twice?
+            <select id="dropdown">
+                <option> Test 1</option>
+                <option> Test 2</option>
+            </select>
+        </label>
+
+        <label for="member" id="member-label">
+            Who is your favorite member?
+        </label>
+        <input type="radio" name="member" checked value="1">Nayeon <br/>
+        <input type="radio" name="member"value="1">Jongyeon <br/>
+        <input type="radio" name="member"value="1">Momo <br/>
+        <input type="radio" name="member"value="2">Sana <br/>
+        <input type="radio" name="member"value="3">Jihyo <br/>
+        <input type="radio" name="member"value="4">Mina <br/>
+        <input type="radio" name="member"value="5">Dahyuan <br/>
+        <input type="radio" name="member"value="6">Chaeyoung <br/>
+        <input type="radio" name="member"value="7">Tzuyu <br/>
+        <br/><br/>
+
+        <label for="albums" id="albums-label">
+            please select your favorite albums?
+        </label>
+        <input type="checkbox" value="cry-for-me">Cry For Me <br>
+        <input type="checkbox" value="more-more">More & More <br>
+        <input type="checkbox"  value="eyes-wide-open">Eyes Wide Open <br/>
+        <input type="checkbox"  value="feel-special">Feel Special <br/>
+        <br/>
+        <label for="comment" id="comment-label">
+            Any comments or suggestions?
+          <textarea  id="comment" cols="30" rows="10" placeholder="Enter your comments here..."></textarea>
+        </label>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
